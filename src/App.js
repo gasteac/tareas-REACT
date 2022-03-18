@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+
+import React from 'react';
 import './App.css';
 
-function App() {
+
+function HelloWorld(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id='hello'>
+      <h3>{props.sub}</h3>
+      {props.texto}
     </div>
-  );
+  )
 }
 
+// Funcion flecha
+
+// const App = () => <div>This is my component: <HelloWorld/></div>
+
+// Lo mismo pero como clase
+
+// class App extends React.Component{
+//   render(){
+//     return <div>This is my component: <HelloWorld/></div>
+//   }
+// }
+
+// Lo mismo pero como una funcion normal
+
+ function App() {
+   return (
+     <div>
+        This is my component 
+        <HelloWorld texto="hola mami jeje"/>
+       <HelloWorld texto="jeje" sub="lorem ipsum"/>
+       <HelloWorld texto="hola"/>
+     </div>
+   );
+ }
+
 export default App;
+
