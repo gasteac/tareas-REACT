@@ -18,6 +18,7 @@ class App extends Component {
           <Route exact path="/post" element={<Post/>}/>
         </Routes>
       </BrowserRouter>
+      <h1>Selecciona una opcion</h1>
     </div>
   }
 }
