@@ -4,6 +4,7 @@ import { Component } from 'react';
 import Post from './components/Post';
 import { BrowserRouter, Route, Routes, Link} from 'react-router-dom';
 import Tareas from './components/Tareas.js';
+import Nada from './components/Nada.js'
 
 
 class App extends Component {
@@ -16,9 +17,9 @@ class App extends Component {
         <Routes>
           <Route exact path="/tareas" element={<Tareas/>}/>
           <Route exact path="/post" element={<Post/>}/>
+          <Route exact path="/" element={<Nada/>}/>
         </Routes>
       </BrowserRouter>
-      <h1>Selecciona una opcion</h1>
     </div>
   }
 }
