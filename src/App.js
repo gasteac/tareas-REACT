@@ -1,17 +1,24 @@
 import React from 'react';
 import './App.css';
 import { Component } from 'react';
-import tareasJson from './ejemplos/tasks.json';
-import Tasks from './components/Tasks.js';
+import Post from './components/Post';
+import { BrowserRouter, Route, Routes, Link} from 'react-router-dom';
+import Tareas from './components/Tareas.js';
+
 
 class App extends Component {
-  state={
-    tasks:tareasJson
-  }
+  
   render(){
-    return (
-      <Tasks tareas={this.state.tasks}/>
-    )
+    return <div>
+      <BrowserRouter>
+        <Link to="/tareas" className='links'>Tareas</Link>
+        <Link to="/post" className='links'>Posteos</Link>
+        <Routes>
+          <Route exact path="/tareas" element={<Tareas/>}/>
+          <Route exact path="/post" element={<Post/>}/>
+        </Routes>
+      </BrowserRouter>
+    </div>
   }
 }
 

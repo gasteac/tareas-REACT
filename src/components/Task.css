@@ -1,0 +1,58 @@
+.buttom {
+    background: red;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.elDiv{
+    padding: 5px;
+    background: grey;
+    margin: 10px;
+    color: white;
+}
+
+.inputClass{
+    margin:10px 0 5px 0;
+    padding: 5px;
+}
+
+.textClass{
+    margin:5px 0 10px 0;
+    padding: 5px;
+}
+
+.container{
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    padding: 10px;
+    background: #f321;
+}
+
+.buttonClass{
+    width: 20%;
+    align-self: flex-end;
+    border:none;
+    background: rgba(116, 12, 12, 0.877);
+    padding: 5px 0 5px 0;
+    color: white;
+    border-radius: 5px;
+}
+
+.links{
+    font-size: 30px;
+    margin: 0 10px 0 0;
+    text-decoration: none;
+    color: blue;
+}
+
+.links:hover{
+    color: red;
+}
+
+.links:focus{
+    color: green;
+}

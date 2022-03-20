@@ -9,13 +9,13 @@
         "id": 1,
         "title": "Tarea dos",
         "description": "Tomar awa",
-        "done": false
+        "done": true
     },
     {
         "id": 2,
         "title": "Tarea tres",
-        "description": "Pajearse con batman",
-        "done": false
+        "description": "Batman",
+        "done": true
     },
     {
         "id": 3,
